@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - VoltGuard</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo">VoltGuard</div>
+        <div class="nav-links">
+            <a href="#" class="active">Dashboard</a>
+            <a href="#" id="logout">Logout</a>
+        </div>
+    </nav>
+
+    <div class="dashboard-container">
+        <div class="dashboard-header">
+            <h1>Energy Dashboard</h1>
+            <div class="room-status">
+                <span class="status-indicator"></span>
+                <span class="status-text">Room Occupied</span>
+            </div>
+        </div>
+
+        <div class="dashboard-grid">
+            <!-- Energy Usage Card -->
+            <div class="dashboard-card">
+                <h3>Energy Usage</h3>
+                <div class="energy-stats">
+                    <div class="stat">
+                        <span class="value">2.4</span>
+                        <span class="label">kW/h</span>
+                    </div>
+                    <div class="chart-container">
+                        <!-- Placeholder for energy usage chart -->
+                        <div class="chart"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Appliance Status Card -->
+            <div class="dashboard-card">
+                <h3>Appliance Status</h3>
+                <div class="appliance-list">
+                    <div class="appliance-item">
+                        <i class="fas fa-lightbulb"></i>
+                        <span>Lights</span>
+                        <label class="switch">
+                            <input type="checkbox" checked>
+                            <span class="slider"></span>
+                        </label>
+                    </div>
+                    <div class="appliance-item">
+                        <i class="fas fa-fan"></i>
+                        <span>Fan</span>
+                        <label class="switch">
+                            <input type="checkbox">
+                            <span class="slider"></span>
+                        </label>
+                    </div>
+                    <div class="appliance-item">
+                        <i class="fas fa-plug"></i>
+                        <span>Power Outlets</span>
+                        <label class="switch">
+                            <input type="checkbox" checked>
+                            <span class="slider"></span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Energy Savings Card -->
+            <div class="dashboard-card">
+                <h3>Energy Savings</h3>
+                <div class="savings-stats">
+                    <div class="stat">
+                        <span class="value">15%</span>
+                        <span class="label">Today</span>
+                    </div>
+                    <div class="stat">
+                        <span class="value">23%</span>
+                        <span class="label">This Week</span>
+                    </div>
+                    <div class="stat">
+                        <span class="value">18%</span>
+                        <span class="label">This Month</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Activity Log Card -->
+            <div class="dashboard-card">
+                <h3>Recent Activity</h3>
+                <div class="activity-log">
+                    <div class="activity-item">
+                        <i class="fas fa-power-off"></i>
+                        <div class="activity-details">
+                            <span class="activity-text">Lights turned on</span>
+                            <span class="activity-time">2 minutes ago</span>
+                        </div>
+                    </div>
+                    <div class="activity-item">
+                        <i class="fas fa-user-check"></i>
+                        <div class="activity-details">
+                            <span class="activity-text">Room occupancy detected</span>
+                            <span class="activity-time">5 minutes ago</span>
+                        </div>
+                    </div>
+                    <div class="activity-item">
+                        <i class="fas fa-power-off"></i>
+                        <div class="activity-details">
+                            <span class="activity-text">Fan turned off</span>
+                            <span class="activity-time">15 minutes ago</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
